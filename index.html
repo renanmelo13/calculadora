@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora JS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- DECORAÇÕES DO FUNDO -->
+
+    <div class="pingo pingo1"></div>
+    <div class="pingo pingo2"></div>
+    <div class="pingo pingo3"></div>
+
+    <div class="simbolo simbolo1">+</div>
+    <div class="simbolo simbolo2">×</div>
+    <div class="simbolo simbolo3">÷</div>
+    <div class="simbolo simbolo4">=</div>
+    <div class="simbolo simbolo5">−</div>
+
+    <!-- CALCULADORA DECORATIVA -->
+
+    <div class="calculadora-grafite calculadora1">
+
+        <div class="visor-grafite"></div>
+
+        <div class="teclas-grafite">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <div class="calculadora-grafite calculadora2">
+
+        <div class="visor-grafite"></div>
+
+        <div class="teclas-grafite">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <!-- CALCULADORA PRINCIPAL -->
+
+    <main class="calculadora">
+
+        <h1>Calculadora</h1>
+
+        <p class="descricao">
+            Digite dois números e escolha uma operação.
+        </p>
+
+
+        <!-- PRIMEIRO CAMPO -->
+
+        <div class="campo">
+
+            <label for="Numero1">
+                Primeiro número
+            </label>
+
+            <input
+                type="number"
+                id="Numero1"
+                placeholder="Digite um número"
+            >
+
+        </div>
+
+
+        <!-- SEGUNDO CAMPO -->
+
+        <div class="campo">
+
+            <label for="Numero2">
+                Segundo número
+            </label>
+
+            <input
+                type="number"
+                id="Numero2"
+                placeholder="Digite um número"
+            >
+
+        </div>
+
+
+        <!-- BOTÕES -->
+
+        <div class="botoes">
+
+            <button onclick="somar()">+</button>
+
+            <button onclick="subtrair()">−</button>
+
+            <button onclick="multiplicar()">×</button>
+
+            <button onclick="dividir()">÷</button>
+
+        </div>
+
+
+        <!-- RESULTADO -->
+
+        <div class="resultado">
+
+            <span>RESULTADO</span>
+
+            <p id="resultado">---</p>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        Calculadora criada por um estudante
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
